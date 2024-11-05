@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas X-PPLG 2</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="web-kelas.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ANIMATE STYLE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="all-image/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="animate__animated animate__fadeInDown">
+        <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>X-PPLG 2</span></a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#struktur">Class Structure</a></li>
+            <li><a href="#jadwal">Schedule</a></li>
+            <li><a href="#guru">Classroom Teacher</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- navbar-end -->
+
+    <!-- tampilan awal -->
+    <section id="hero">
+        <div class="container">
+            <div class="text">
+                <h1 class="animate__animated animate__fadeInLeft animate__delay-.7s">Welcome to MyClass</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-.7s">MyClass is a platform designed to facilitate communication between teachers and students. Our goal is
+                    to provide a comprehensive and engaging learning experience for all.</p>
+                <button class="animate__animated animate__zoomInDown animate__delay-.7s   ">See More</button>
+            </div>
+            <div class="image animate__animated animate__fadeInRightBig animate__delay-.7s">
+                <img src="logo.png" alt="MyClass Image">
+            </div>
+        </div>
+    </section>
+    <!-- tampilan awal-end -->
+
+    <!-- fotbar -->
+    <section id="gallery">
+        <div class="judul" data-aos="fade-up" data-aos-duration="800">
+            <p class="satu">📷</p>
+            <h1>Our Pictures</h1>
+            <p class="dua">📷</p>
+        </div>
+        <div class="container">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-image">
+                    <img src="all-image/first.jpg" alt="Card Image 1">
+                </div>
+                <div class="card-content">
+                    <h2>Momen Awal Masuk Sekolah</h2>
+                    <p>Foto ini diambil pada hari pertama kami masuk sekolah. Dengan penuh semangat dan harapan, kami
+                        memulai perjalanan baru ini.</p>
+                    <a href="/" class="btn" onclick="openLightbox('all-image/first.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <div class="card-image">
+                    <img src="foto-kelas.jpg" alt="Card Image 2">
+                </div>
+                <div class="card-content">
+                    <h2>Kenangan Pertama Bersama</h2>
+                    <p>Ini adalah foto pertama kami sekelas, diambil saat kami memulai perjalanan belajar bersama.</p>
+                    <a href="/" class="btn" onclick="openLightbox('foto-kelas.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <div class="card-image">
+                    <img src="all-image/p5.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h2>Gotong Royong Membersihkan Kelas</h2>
+                    <p>Foto ini diambil setelah kami bersama-sama membersihkan kelas. Kegiatan ini tidak hanya membuat
+                        ruang belajar kami lebih nyaman, tetapi juga mengajarkan pentingnya kerja sama dan tanggung
+                        jawab.</p>
+                    <a href="/" class="btn" onclick="openLightbox('all-image/p5.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <div class="card-image">
+                    <img src="kelas.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h2>Keseruan Setelah Kemah</h2>
+                    <p>Foto ini diambil setelah kami selesai menjalani kegiatan kemah. Kami belajar banyak tentang alam,
+                        kebersamaan, dan saling mendukung satu sama lain.</p>
+                    <a href="/" class="btn" onclick="openLightbox('kelas.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <div class="card-image">
+                    <img src="all-image/pdu2.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h2>Hari Senin Setelah Pulang Sekolah</h2>
+                    <p>Foto ini diambil di hari Senin, setelah pulang sekolah. Meski hari senin sering dianggap sebagai
+                        hari yang berat, momen kebersamaan sepulang sekolah ini justru membawa keceriaan tersendiri.</p>
+                    <a href="/" class="btn" onclick="openLightbox('all-image/pdu2.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <div class="card-image">
+                    <img src="all-image/saman.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h2>Praktik Ujian Tari Saman</h2>
+                    <p>Dalam foto ini, kelas kita sedang melakukan praktik Tari Saman bersama. Semua anggota kelas duduk berjajar, mengenakan kostum khas, dan menampilkan ekspresi fokus dan antusias</p>
+                    <a href="/" class="btn" onclick="openLightbox('all-image/saman.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-image">
+                    <img src="all-image/renang.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h2>Foto Setelah Renang</h2>
+                    <p>Foto ini diambil setelah renang, dan terlihat wajah-wajah puas meski lelah. Momen sederhana tapi bikin kita makin dekat, nambah cerita seru buat satu kelas.</p>
+                    <a href="/" class="btn" onclick="openLightbox('all-image/renang.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-image">
+                    <img src="all-image/bulan.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h2>Kegiatan Bulan Bahasa</h2>
+                    <p>Setelah Bulan Bahasa, kita semua berkumpul memakai baju batik bebas. Senyum dan tawa di foto ini nunjukkin betapa serunya ngerayain budaya bareng satu kelas.</p>
+                    <a href="/" class="btn" onclick="openLightbox('all-image/bulan.jpg')">Preview Full Photo</a>
+                </div>
+            </div>
+        </div>
+        <!-- Lightbox Modal -->
+        <div id="bos" class="bos">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="bos-content" id="bos-image">
+        </div>
+
+        <div class="wrap" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="smk">SMKN 1 KOTA CIREBON</div>
+            <div class="welcome">
+                <p>Welcome To The Our Class</p>
+                <p>X-PPLG 2</p>
+            </div>  
+        </div>
+    </section>
+    <!-- fotbar-end -->
+
+    <!-- struktur kelas -->
+    <section id="struktur">
+    
+        <div class="judul" data-aos="fade-down">
+            <h1 class="judul-nya">Class Structure of X-PPLG 2</h1>
+        </div>
+        <div class="walas" data-aos="zoom-in-up" data-aos-duration="1500">
+            <a href="all-image/pa-riyan.jpg" data-lightbox="models" data-title="<h2>Pak Riyan Triana</h2> Wali Kelas X-PPLG 2">
+                <img src="all-image/pa-riyan.jpg" alt="">
+                <span>Pak Riyan Triana</span>
+            </a>
+        </div>
+
+        <div class="info" data-aos="flip-left">
+            <h1>List of Students</h1>
+            <h4>35 Peoples</h4>
+            <p>👧 : 16 students</p>
+            <p>👦 : 19 students</p>
+        </div>
+        <div class="list-student">
+            <h1>List of Students</h1>
+        </div>
+        
+        <div class="daftar-siswa">
+            <div class="siswa" data-aos="fade-down-right" data-aos-duration="1000">
+                <a href="all-image/nunu.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Abdul Mughni Nugraha (KM of X-PPLG 2) </h3> <br>
+                                            <p><b> 26/04/2009 </b></p>
+                                            <p><i> Instagram : @call_me_nunu26 </i></p>
+                                            <p><i> WhatsApp : 085383222286 </i></p>
+                                            <p> Home Addres : Arum Sari </p>">
+                    <img src="all-image/nunu.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">abdul mughni nugraha</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-down" data-aos-duration="1000">
+                <a href="all-image/fathan.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Ahmad Fathan Aroyan </h3> <br>
+                                            <p><b> 17/02/2009 </b></p>
+                                            <p><i> Instagram : @fthn.a_ </i></p>
+                                            <p><i> WhatsApp : 085721200049 </i></p>
+                                            <p> Home Addres : Jl.Teratai No 5 Kalijaga Harjamukti </p>">
+                    <img src="all-image/fathan.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">ahmad fathan aroyan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-down-left" data-aos-duration="1000">
+                <a href="all-image/ameng.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Amelia Agustin </h3> <br>
+                                            <p><b> 30-07-2008 </b></p>
+                                            <p><i> Instagram : melawqs </i></p>
+                                            <p><i> WhatsApp : 088218727630 </i></p>
+                                            <p> Home Addres : jl kandang prahu no 50 RT04/RW11 </p>">
+                    <img src="all-image/ameng.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">amelia agustin</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/ammar.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Ammar Nur Faishol </h3> <br>
+                                            <p><b> 09/3/2009 </b></p>
+                                            <p><i> Instagram : skl_rises </i></p>
+                                            <p><i> WhatsApp : 08156005739 </i></p>
+                                            <p> Home Addres : Kandang Perahu </p>">
+                    <img src="all-image/ammar.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">ammar nur faishol</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/arya.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Arya Milito </h3> <br>
+                                            <p><b> 16-05-2009 </b></p>
+                                            <p><i> Instagram : Arya•_•milito </i></p>
+                                            <p><i> WhatsApp : 085979533970 </i></p>
+                                            <p> Home Addres : Jl.kapten Samadikun </p>">
+                    <img src="all-image/arya.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">arya milito</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/atalah.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Athallah Asyarif Khoirulinsan </h3> <br>
+                                            <p><b> 15/03/2009 </b></p>
+                                            <p><i> Instagram : athallah_ori </i></p>
+                                            <p><i> WhatsApp : 085864841735 </i></p>
+                                            <p> Home Addres : (secret) </p>">
+                    <img src="all-image/atalah.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">athallah asyarif khoirulinsan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/chiara.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Chiara Dewi Chatlina </h3> <br>
+                                            <p><b> - </b></p>
+                                            <p><i> Instagram : - </i></p>
+                                            <p><i> WhatsApp : 0895387077060 </i></p>
+                                            <p> Home Addres : - </p>">
+                    <img src="all-image/chiara.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">chiara dewi chatlina</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/diyana.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Diyana Putri Ramadhan </h3> <br>
+                                            <p><b> 15/09/2009 </b></p>
+                                            <p><i> Instagram : theeeyyynanaaa </i></p>
+                                            <p><i> WhatsApp : 082114115229 </i></p>
+                                            <p> Home Addres : jln.Pangeran Drajat </p>">
+                    <img src="all-image/diyana.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">diyana putri ramadhan</p>
+
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/rian.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Fathan Aprian </h3> <br>
+                                            <p><b> 09/04/2009 </b></p>
+                                            <p><i> Instagram : xiannnf </i></p>
+                                            <p><i> WhatsApp : 082262838223 </i></p>
+                                            <p> Home Addres : Desa Setu Kulon, Kec Weru , Kab Cirebon </p>">
+                    <img src="all-image/rian.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">fathan aprian</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/ferdy.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Ferdy Pratama Suradi </h3> <br>
+                                            <p><b> - </b></p>
+                                            <p><i> Instagram : perdyprtmaaa </i></p>
+                                            <p><i> WhatsApp : 087846728053 </i></p>
+                                            <p> Home Addres : Ciperna </p>">
+                    <img src="all-image/ferdy.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">ferdy pratama suradi</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/indah.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Indah Nuraisyah </h3> <br>
+                                            <p><b> 06 juni 2009 </b></p>
+                                            <p><i> Instagram : @purelymps0indah_
+                                                @stuffinserts </i></p>
+                                            <p><i> WhatsApp : 08996733553 </i></p>
+                                            <p> Home Addres : Kalijaga </p>">
+                    <img src="all-image/indah.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">indah nuraisyah</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/jihan.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Jihan Riesty Aprilia </h3> <br>
+                                            <p><b> 18/04/2009 </b></p>
+                                            <p><i> Instagram : the__fullsun </i></p>
+                                            <p><i> WhatsApp : 085864621425 </i></p>
+                                            <p> Home Addres : Plered, Desa Tegal Sari </p>">
+                    <img src="all-image/jihan.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">jihan riesty aprilia</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/jia.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Jihan Syahira </h3> <br>
+                                            <p><b> 22/08/2009 </b></p>
+                                            <p><i> Instagram : zhira_o.o </i></p>
+                                            <p><i> WhatsApp : 085236231112 </i></p>
+                                            <p> Home Addres : Penggung Selatan </p>">
+                    <img src="all-image/jia.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">jihan syahira</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/faiq.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Kayndra Nur Faiq </h3> <br>
+                                            <p><b> 04/01/2009 </b></p>
+                                            <p><i> Instagram : Kayndra faiq </i></p>
+                                            <p><i> WhatsApp : 081324200686 </i></p>
+                                            <p> Home Addres : Jl. Mercedes Benz blok B1 no 83 kec Harjamukti kota Cirebon </p>">
+                    <img src="all-image/faiq.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">kayndra nur faiq</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/melani.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Melani Detiani </h3> <br>
+                                            <p><b> 10/05/2009 </b></p>
+                                            <p><i> Instagram : @flwermmel_ </i></p>
+                                            <p><i> WhatsApp : 087841015544 </i></p>
+                                            <p> Home Addres : jl. kaliporong komplek stadion bima </p>">
+                    <img src="all-image/melani.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">melani detiani</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/melina.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Melina Detiana </h3> <br>
+                                            <p><b> 10/05/2009 </b></p>
+                                            <p><i> Instagram : @flwermmel_00 </i></p>
+                                            <p><i> WhatsApp : 087726834345 </i></p>
+                                            <p> Home Addres : jl. kaliporong komplek stadion bima </p>">
+                    <img src="all-image/melina.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">melina detiana</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/bintang.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Mochamad Bintang Laksamana Sumardi </h3> <br>
+                                            <p><b> - </b></p>
+                                            <p><i> Instagram : - </i></p>
+                                            <p><i> WhatsApp : 085161891811 </i></p>
+                                            <p> Home Addres : Gunung Jati </p>">
+                    <img src="all-image/bintang.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">mochamad bintang laksamana sumardi</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/ridho.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Mohammad Ridho Oktoberyl Nugraha </h3> <br>
+                                            <p><b> 11/10/2008 </b></p>
+                                            <p><i> Instagram : idongslopi </i></p>
+                                            <p><i> WhatsApp : 085723558104 </i></p>
+                                            <p> Home Addres : Jl. Galunggung </p>">
+                    <img src="all-image/ridho.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">mohammad ridho oktoberyl nugraha</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/imin2.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Muhaimin </h3> <br>
+                                            <p><b> 24/10/2008 </b></p>
+                                            <p><i> Instagram : noriyu_ </i></p>
+                                            <p><i> WhatsApp : 082295350189 </i></p>
+                                            <p> Home Addres : Sendang </p>">
+                    <img src="all-image/imin2.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">muhaimin</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/nafisah.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Nafisah Adelia Putri </h3> <br>
+                                            <p><b> 15/10/2008 </b></p>
+                                            <p><i> Instagram : @nnpzzzxly </i></p>
+                                            <p><i> WhatsApp : 089501969988 </i></p>
+                                            <p> Home Addres : Gerbang Permai Pamengkang </p>">
+                    <img src="all-image/nafisah.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">nafisah adelia putri</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/nino.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Nino Adityo Nugroho </h3> <br>
+                                            <p><b> 15/03/2009 </b></p>
+                                            <p><i> Instagram : nihooo_o.o </i></p>
+                                            <p><i> WhatsApp : 087740864657 </i></p>
+                                            <p> Home Addres : Griya Cempaka Arum </p>">
+                    <img src="all-image/nino.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">nino adityo nugroho</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/noval.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Noval Maulana </h3> <br>
+                                            <p><b> 1/11/2008  </b></p>
+                                            <p><i> Instagram : @palzneverluz </i></p>
+                                            <p><i> WhatsApp : 088224523055 </i></p>
+                                            <p> Home Addres : Drajat </p>">
+                    <img src="all-image/noval.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">noval maulana</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/opang.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Novvalino Putra Gianto </h3> <br>
+                                            <p><b> 18/11/2008 </b></p>
+                                            <p><i> Instagram : secret </i></p>
+                                            <p><i> WhatsApp : 088222116744 </i></p>
+                                            <p> Home Addres : perumahan sutan raja residence klayan kabupaten cirebon </p>">
+                    <img src="all-image/opang.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">novvalino putra gianto</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/nur.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Nur Fajrina Ramadhan </h3> <br>
+                                            <p><b> 05/09/2008 </b></p>
+                                            <p><i> Instagram : itss_n4naa </i></p>
+                                            <p><i> WhatsApp : 0895326777933 </i></p>
+                                            <p> Home Addres : Penggung </p>">
+                    <img src="all-image/nur.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">nur fajrina ramadhan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/okta.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Okta Putri Syllawati Hassan </h3> <br>
+                                            <p><b> 01/10/2009 </b></p>
+                                            <p><i> Instagram : @hrs_asc </i></p>
+                                            <p><i> WhatsApp : 0895636819392 </i></p>
+                                            <p> Home Addres : Kriyan barat, jln pronggol
+                                            </p>">
+                    <img src="all-image/okta.jpg" alt="">
+                    <div class="overlay">
+                      <p class="caption">okta Putri Syllawati Hassan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/prima.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Prima Al Rasyid Irawan </h3> <br>
+                                            <p><b> 02/08/2009 </b></p>
+                                            <p><i> Instagram : pimmthekid </i></p>
+                                            <p><i> WhatsApp : 081770692080 </i></p>
+                                            <p> Home Addres : Gg. Layur, Panjunan, Kec. Lemahwungkuk </p>">
+                    <img src="all-image/prima.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">prima al rasyid irawan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/puji.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Puji Wijayanto </h3> <br>
+                                            <p><b> 02/08/2008 </b></p>
+                                            <p><i> Instagram : pujione </i></p>
+                                            <p><i> WhatsApp : - </i></p>
+                                            <p> Home Addres : Gunung Jati, Pasindangan </p>">
+                    <img src="all-image/puji.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">puji wijayanto</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/radit.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Radhitya Rizki Ramadhan </h3> <br>
+                                            <p><b> - </b></p>
+                                            <p><i> Instagram : - </i></p>
+                                            <p><i> WhatsApp : 0895405733443 </i></p>
+                                            <p> Home Addres : Derajat </p>">
+                    <img src="all-image/radit.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">radhitya rizki ramadhan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/udin.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Saefudin Putra Maghfiroti </h3> <br>
+                                            <p><b> - </b></p>
+                                            <p><i> Instagram : - </i></p>
+                                            <p><i> WhatsApp : 082319560767 </i></p>
+                                            <p> Home Addres : - </p>">
+                    <img src="all-image/udin.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">saefudin putra maghfiroti</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-right" data-aos-duration="1000">
+                <a href="all-image/sarif.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Sarif Hidayat </h3> <br>
+                                            <p><b> 23/04/2009 </b></p>
+                                            <p><i> Instagram : arifzzzs1 </i></p>
+                                            <p><i> WhatsApp : 083180759760 </i></p>
+                                            <p> Home Addres : kelurahan larangan, kecamatan lemahwungkung, jalan rinjani 3, rt 4, rw 5 </p>">
+                    <img src="all-image/sarif.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">sarif hidayat</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/sindi.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Sindi Maulidiya </h3> <br>
+                                            <p><b> 17/03/2009 </b></p>
+                                            <p><i> Instagram : 4ulidd_ </i></p>
+                                            <p><i> WhatsApp : 089652700838 </i></p>
+                                            <p> Home Addres : Jl Pangeran Cakrabuana kec sumber kel sendang blok karang moncol rt 6 rw 2 </p>">
+                    <img src="all-image/sindi.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">sindi maulidiya</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/syafa.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Syafa Inesya </h3> <br>
+                                            <p><b> 13/11/2008 </b></p>
+                                            <p><i> Instagram : @syaafa.ins </i></p>
+                                            <p><i> WhatsApp : 083102239857 </i></p>
+                                            <p> Home Addres : Talun, Jl. Arumsari </p>">
+                    <img src="all-image/syafa.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">syafa inesya</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-left" data-aos-duration="1000">
+                <a href="all-image/syilla.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Syilla Mulya Ramadhan </h3> <br>
+                                            <p><b> 07/08/2009 </b></p>
+                                            <p><i> Instagram : @flwersylaa </i></p>
+                                            <p><i> WhatsApp : 0895373129211 </i></p>
+                                            <p> Home Addres : jln.pangeran drajat gg asem rt 02 rw 09 jabang bayi </p>">
+                    <img src="all-image/syilla.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">syilla mulya ramadhan</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-up-right" data-aos-duration="1000">
+                <a href="all-image/tiara.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Tiara Afpacila </h3> <br>
+                                            <p><b> 04/12/2008 </b></p>
+                                            <p><i> Instagram : theonly_raaa9 </i></p>
+                                            <p><i> WhatsApp : 083863598389 </i></p>
+                                            <p> Home Addres : desa kepongpongan, jln pangeran cakrabuana </p>">
+                    <img src="all-image/tiara.jpg" alt="">
+                    <div class="overlay">
+                      <p class="caption">tiara afpacila</p>
+                    </div>
+                </a>
+            </div>
+            <div class="siswa" data-aos="fade-up-left" data-aos-duration="1000">
+                <a href="all-image/vetri.jpg" data-lightbox="mygallery" data-title="
+                                            <h2> Vetri Putri Rantika </h3> <br>
+                                            <p><b> 06/04/2009 </b></p>
+                                            <p><i> Instagram : _tryraan </i></p>
+                                            <p><i> WhatsApp : 087740864657 </i></p>
+                                            <p> Home Addres : Ds.ujunggebang </p>">
+                    <img src="all-image/vetri.jpg" alt="">
+                    <div class="overlay">
+                        <p class="caption">vetri putri rantika</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- struktur kelas-end -->
+
+    <!-- Fotbar Kelompok -->
+    <div class="container-kelompok" data-aos="flip-right" data-aos-duration="1000"
+    data-aos-anchor-placement="top-center">
+        <p>^_____^</p>
+        <div class="card">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+                </path>
+            </svg>
+            <div class="card__content">
+                <p class="card__description">
+                    <img src="all-image/mewing.jpg" alt="">
+                </p>
+            </div>
+        </div>
+
+        <div class="judul">
+            <h1>don't open it! ⚠️</h1>
+        </div>
+    </div>
+    <!-- Fotbar Kelompok end -->
+
+    <!-- Jadwal -->
+    <section class="container-table" id="jadwal" data-aos="fade-down"
+    data-aos-easing="ease-in-out"
+    data-aos-duration="1000">
+        <div class="jadwal-pelajaran">
+    
+            <div class="judul-atas">
+                <div class="isi-judul">
+                    <h1>JADWAL KEGIATAN BELAJAR SISWA</h1>
+                    <p>TAHUN PELAJARAN 2024/2025</p>
+                </div>
+                <div class="kelas-judul">
+                    <h2>KELAS : X PPLG 2</h2>
+                    <p>WALI KELAS : RIYAN TRIANA S.Pd</p>
+                </div>
+            </div>
+    
+            <div class="table-pelajaran">
+                <table>
+                    <tr>
+                        <th>JAM KE-</th>
+                        <th>WAKTU</th>
+                        <th>SENIN</th>
+                        <th>SELASA</th>
+                        <th>RABU</th>
+                        <th>KAMIS</th>
+                        <th>JUM'AT</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>07.00-07.40</td>
+                        <td>Upacara Bendera</td>
+                        <td><b>DPK</b></td>
+                        <td><b>DPK</b></td>
+                        <td><b>INFORMATIKA</b></td>
+                        <td>Kegiatan Pembiasaan</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>07.40-08.20</td>
+                        <td><b>PENDIDIKAN PANCASILA</b></td>
+                        <td>PAK DUDUNG</td>
+                        <td>PAK DUDUNG</td>
+                        <td>PAK NURHIKMAH</td>
+                        <td><b>B.INGGRIS</b></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>08.20-09.00</td>
+                        <td>BU VIHANTIKA</td>
+                        <td>LAB 4</td>
+                        <td>LAB 2</td>
+                        <td>-</td>
+                        <td>BU ERI</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><b>09.00-09.30</b></td>
+                        <td colspan="5"><b>ISTIRAHAT (30MENIT)</b></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>09.30-10.10</td>
+                        <td><b>BK</b> / PAK SRI</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>10.10-10.50</td>
+                        <td><b>PJOK</b></td>
+                        <td><b>IPAS</b></td>
+                        <td><b>SEJARAH</b></td>
+                        <td><b>DPK</b></td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>10.50-11.30</td>
+                        <td>PAK YUSUP</td>
+                        <td>BU WETI</td>
+                        <td>PAK CAHYA</td>
+                        <td>PAK DUDUNG</td>
+                        <td><b>MATEMATIKA</b></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><b>11.30-12.30</b></td>
+                        <td colspan="5"><b>ISTIRAHAT (60MENIT)</b></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>12.30-13.10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><b>B.INDONESIA</b></td>
+                        <td>LAB 2</td>
+                        <td><b>PAK ZAENAL</b></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>13.10-13.50</td>
+                        <td><b>PAI&BP</b></td>
+                        <td>-</td>
+                        <td>BU VERA</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>13.50-14.30</td>
+                        <td>PAK DEDI</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><b>B.SUNDA</b></td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>14.30-15.10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>PAK RIYAN</td>
+                        <td><b>SENI BUDAYA</b></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>15.10-15.50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>BU TRESNA</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>15.50-16.30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <div class="jadwal-piket">
+            <div class="judul-atas">
+                <div class="isi-judul">
+                    <h1>JADWAL PIKET</h1>
+                </div>
+                <div class="kelas-judul">
+                    <h3>X PPLG 2</h3>
+                </div>
+            </div>
+    
+            <div class="table-piket">
+                <table>
+                    <tr>
+                        <th>SENIN</th>
+                        <th>SELASA</th>
+                        <th>RABU</th>
+                        <th>KAMIS</th>
+                        <th>JUM'AT</th>
+                    </tr>
+                    <tr>
+                        <td>ammar</td>
+                        <td>nunu</td>
+                        <td>ridho</td>
+                        <td>fathan</td>
+                        <td>ferdy</td>
+                    </tr>
+                    <tr>
+                        <td>radhitya</td>
+                        <td>muhaimin</td>
+                        <td>arya</td>
+                        <td>nino</td>
+                        <td>bintang</td>
+                    </tr>
+                    <tr>
+                        <td>sarif</td>
+                        <td>rian</td>
+                        <td>faiq</td>
+                        <td>puji</td>
+                        <td>athallah</td>
+                    </tr>
+                    <tr>
+                        <td>chiara</td>
+                        <td>saefudin</td>
+                        <td>noval</td>
+                        <td>prima</td>
+                        <td>novvalino</td>
+                    </tr>
+                    <tr>
+                        <td>vetri</td>
+                        <td>fajrina</td>
+                        <td>melani</td>
+                        <td>diyana</td>
+                        <td>amelia</td>
+                    </tr>
+                    <tr>
+                        <td>syilla</td>
+                        <td>nafisah</td>
+                        <td>syafa</td>
+                        <td>melina</td>
+                        <td>jia</td>
+                    </tr>
+                    <tr>
+                        <td>okta</td>
+                        <td>tiara</td>
+                        <td>indah</td>
+                        <td>sindi</td>
+                        <td>jihan</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container-absen">
+                <div class="absen">
+                    <div class="judul-atas">
+                        <h1>Absensi Siswa</h1>
+                    </div>
+                    <table id="attendanceTable">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Siswa</th>
+                                <th>Hadir</th>
+                                <th>Izin</th>
+                                <th>Sakit</th>
+                                <th>Alpa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be added by JavaScript -->
+                        </tbody>
+                    </table>
+                    <button class="btn-absen" onclick="submitAttendance()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Jadwal end -->
+
+    <!-- Info Guru Kelas -->
+    <div class="slide-container swiper" id="guru" data-aos="fade-up"
+    data-aos-duration="2000">
+        <div class="judul">
+            <div>
+                <h1>Classroom Teacher</h1>
+                <p>a little information about the teachers who teach in our class : </p>
+            </div>
+            <div>
+                <p style="font-size: 70px;">🧑‍🏫</p>
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Bu Vihantika</h2>
+                        <p class="description">Bu Vihantika atau biasa dipanggil Bu Vihan, mengajar sebagai guru mata
+                            pelajaran PPKn. Guru yang asik dan ramah ketika mengajar.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Sri</h2>
+                        <p class="description">Pak Sri sebagai guru BK di kelas kami. Guru yang baik dan selalu
+                            merangkul muridnya. Pak Sri sangat sabar dalam mendidik kami.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Yusup</h2>
+                        <p class="description">Pak Yusup adalah guru yang paling disegani oleh semua warga di sekolah
+                            kami. Dia mengajar sebagai guru olahraga (PJOK) di kelas kami.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Dedi</h2>
+                        <p class="description">Pak Dedi mengajar sebagai guru mata pelajaran PAI. Seperti guru pada
+                            umumnya pak dedi selalu datang tepat waktu untuk mengajar di kelas kami.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Rizal</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Bu Weti</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Cahya</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Bu Vera</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Nurhikmah</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Riyan</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Bu Eri</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Pak Zaenal</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="gradient"></span>
+
+                        <div class="card-image">
+                            <img src="all-image/uknown.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Bu Tresna</h2>
+                        <p class="description">The lorem text the section that contains header with having open
+                            functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Info Guru Kelas end -->
+
+    <!-- Star -->
+    <div class="rating"  data-aos="zoom-in-up" data-aos-duration="500">
+        <input type="radio" id="star-1" name="star-radio" value="star-1">
+        <label for="star-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-2" name="star-radio" value="star-1">
+        <label for="star-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-3" name="star-radio" value="star-1">
+        <label for="star-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-4" name="star-radio" value="star-1">
+        <label for="star-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-5" name="star-radio" value="star-1">
+        <label for="star-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+    </div>
+    <!-- Star end -->
+
+    <!-- Thanks Footer -->
+    <!-- <h1 class="goyang" data-aos="zoom-out-up">
+        <span>&#129395;</span>
+        <span>T</span>
+        <span>H</span>
+        <span>A</span>
+        <span>N</span>
+        <span>K</span>
+        <span>S</span>
+        <span>&#129395;</span>
+    </h1>    -->
+    <!-- Thanks Footer end -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>X-PPLG 2</h3>
+            <p>Belajar bersama untuk mencapai masa depan yang lebih baik.</p>
+            <ul class="socials">
+                <li><a href="#"><img src="all-image/Facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="all-image/Twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/semesta.extwous?igsh=ZWc0ZXI0ank3Y2Jx"><img src="all-image/Instagram.svg" alt="Instagram"></a></li>
+            </ul>
+
+            <nav>
+                <ul class="nav-footer">
+                    <li><a href="#" class="active">Home</a></li> |
+                    <li><a href="#gallery">Gallery</a></li> |
+                    <li><a href="#struktur">CLass Structure</a></li> |
+                    <li><a href="#jadwal">Schedule</a></li> |
+                    <li><a href="#guru">Classroom Teacher</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 X-PPLG 2. All rights reserved.</p>
+            <p>Created with <span class="heart">&hearts;</span> by [Nidji]</p>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+
+
+    <!-- MyScript -->
+    <script src="web-kelas.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="js/lightbox-plus-jquery.js"></script>
+
+    <!-- SLiderCard JS -->
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            cssMode: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+
+</html>
